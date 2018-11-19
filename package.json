@@ -1,0 +1,74 @@
+{
+  "_from": "node-red-contrib-dialogflowv2-api",
+  "_id": "node-red-contrib-dialogflowv2-api@0.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-v9tDjRgDS1Y0wcZNF4kUAepVLkvo4hJLcNp/v06rfRq01sxu82drv7Bd3Y2WEjNP/K69RsLndFUNHRZUIpiYQw==",
+  "_location": "/node-red-contrib-dialogflowv2-api",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-contrib-dialogflowv2-api",
+    "name": "node-red-contrib-dialogflowv2-api",
+    "escapedName": "node-red-contrib-dialogflowv2-api",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-dialogflowv2-api/-/node-red-contrib-dialogflowv2-api-0.0.7.tgz",
+  "_shasum": "c4e8a526d9e54d9428701d247ea0d0e49d16bbf3",
+  "_spec": "node-red-contrib-dialogflowv2-api",
+  "_where": "C:\\Users\\rgerasimov",
+  "author": {
+    "name": "Roman Gerasimov",
+    "url": "rgerasimov@croc.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/german-st/dialogflowv2/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cli-color": "^1.4.0",
+    "dialogflow": "^0.7.0",
+    "moment": "^2.22.2",
+    "node-pre-gyp": "^0.12.0",
+    "prettyjson": "^1.2.1",
+    "request": "^2.88.0",
+    "underscore": "^1.9.1",
+    "windows-build-tools": "^5.0.0"
+  },
+  "deprecated": false,
+  "description": "Dialogflow node for Nore-RED. Support API v2 dialogflow.com",
+  "devDependencies": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/german-st/dialogflowv2.git",
+  "keywords": [
+    "node-red",
+    "dialogflow",
+    "node-red",
+    "dialogflow",
+    "dialogflow.com",
+    "node-red-contrib-dialogflowv2-api"
+  ],
+  "license": "ISC",
+  "main": "chatbot=dialogflow.js",
+  "name": "node-red-contrib-dialogflowv2-api",
+  "node-red": {
+    "nodes": {
+      "dialogflowv2": "dialogflowv2.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/german-st/dialogflowv2.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.9"
+}
