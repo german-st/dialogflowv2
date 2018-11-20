@@ -1,6 +1,6 @@
 {
   "_from": "node-red-contrib-dialogflowv2-api",
-  "_id": "node-red-contrib-dialogflowv2-api@1.0.0",
+  "_id": "node-red-contrib-dialogflowv2-api@1.0.1",
   "_inBundle": false,
   "_integrity": "sha512-PuLaGoe0wn2eQlMtZKeXq8Vk+id+QJF6gpnB6y3y80j4gURFWh6F/zUelthbkdthltwnlsmUCr8xqBNT00rOWQ==",
   "_location": "/node-red-contrib-dialogflowv2-api",
