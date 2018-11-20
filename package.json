@@ -2,7 +2,7 @@
   "_from": "node-red-contrib-dialogflowv2-api",
   "_id": "node-red-contrib-dialogflowv2-api@1.0.0",
   "_inBundle": false,
-  "_integrity": "sha512-v9tDjRgDS1Y0wcZNF4kUAepVLkvo4hJLcNp/v06rfRq01sxu82drv7Bd3Y2WEjNP/K69RsLndFUNHRZUIpiYQw==",
+  "_integrity": "sha512-PuLaGoe0wn2eQlMtZKeXq8Vk+id+QJF6gpnB6y3y80j4gURFWh6F/zUelthbkdthltwnlsmUCr8xqBNT00rOWQ==",
   "_location": "/node-red-contrib-dialogflowv2-api",
   "_phantomChildren": {},
   "_requested": {
@@ -18,10 +18,10 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/node-red-contrib-dialogflowv2-api/-/node-red-contrib-dialogflowv2-api-0.0.7.tgz",
-  "_shasum": "c4e8a526d9e54d9428701d247ea0d0e49d16bbf3",
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-dialogflowv2-api/-/node-red-contrib-dialogflowv2-api-1.0.0.tgz",
+  "_shasum": "a59eac5d8e40d939cc6ae55c9e817be68933ce77",
   "_spec": "node-red-contrib-dialogflowv2-api",
-  "_where": "C:\\Users\\rgerasimov",
+  "_where": "C:\\Users\\rgerasimov\\AppData\\Roaming\\npm\\node_modules",
   "author": {
     "name": "Roman Gerasimov",
     "url": "rgerasimov@croc.ru"

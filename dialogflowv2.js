@@ -15,12 +15,10 @@ module.exports = function(RED) {
     node.variable = config.variable;
 
     this.on('input', function (msg) {
-      var chatContext = msg.chat();
       var dialogFlowNode = RED.nodes.getNode(node.dialogflow);
       var language = utils.extractValue('string', 'language', node, msg, false);
       var variable = utils.extractValue('string', 'variable', node, msg, false);
       var debug = utils.extractValue('boolean', 'debug', node, msg, false);
-      var chatId = utils.getId(msg);
 
       // exit if empty credentials
       if (dialogFlowNode == null || dialogFlowNode.credentials == null) {
@@ -44,29 +42,26 @@ module.exports = function(RED) {
         }
       });
 
-      /*
-      POST https://language.googleapis.com/v1/documents:analyzeEntities?key=API_KEY
-      */
+
       var sessionPath = sessionClient.sessionPath(projectId, String(msg._msgid));
       var request = {
         session: sessionPath,
         queryInput: {
           text: {
-            text: msg.payload.content,
+            text: msg.payload,
             languageCode: language.toLowerCase()
           }
         }
       };
 
-      var isFallback = null;
-      var intent = null;
-      var variables = {};
-      var answer = null;
       var body = null;
+	  
+	  function start (key, value) {
+       var global = key+value;
+        return global;
+      }
 
-      //sessionClient.detectIntent(request)
-      //promise
-      when(chatContext.set('pending', true))
+      when(start('id ', msg._msgid))
       
       .then(function() {
           return sessionClient.detectIntent(request);
@@ -77,7 +72,6 @@ module.exports = function(RED) {
           return when(msg!==null);
         })
         .then(function() {
-          // extract variables
           if (body == null || !_.isArray(body) || _.isEmpty(body)) {
             return Promise.reject('Error on api.dialogflow.com');
           }
@@ -86,7 +80,6 @@ module.exports = function(RED) {
           //Result output
           msg._dialogflow = body[0].queryResult;
           if (debug) {
-            console.log(' Answer');
             lcd.node(msg.payload, { node: node, title: 'Dialogflow-V2.com' });
           }
           node.send([msg, null]);
