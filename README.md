@@ -1,4 +1,5 @@
 [![NPM](https://nodei.co/npm/node-red-contrib-dialogflowv2-api.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/node-red-contrib-dialogflowv2-api/)
+
 [![npm](https://img.shields.io/npm/dt/node-red-contrib-dialogflowv2-api.svg)](https://www.npmjs.com/package/node-red-contrib-dialogflowv2-api)
 
 # README #
