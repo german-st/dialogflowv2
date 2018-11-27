@@ -34,11 +34,9 @@
     "cli-color": "^1.4.0",
     "dialogflow": "^0.7.0",
     "moment": "^2.22.2",
-    "node-pre-gyp": "^0.12.0",
     "prettyjson": "^1.2.1",
     "request": "^2.88.0",
-    "underscore": "^1.9.1",
-    "windows-build-tools": "^5.0.0"
+    "underscore": "^1.9.1"
   },
   "deprecated": false,
   "description": "Dialogflow node for Nore-RED. Support API v2 dialogflow.com",
